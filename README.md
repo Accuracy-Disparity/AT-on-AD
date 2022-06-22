@@ -28,12 +28,12 @@ python test_syn.py  --seed $1 --n-epochs 500 --R $2 --lr $3
 
 ## Robust Model
 # Training
-python train_syn.py 	--seed $1 --n-epochs 500 
-			--adv --norm-type $2 
+python train_syn.py 	--seed $1 --n-epochs 500 \
+			--adv --norm-type $2 \
 			--norm-scale $3 --R $4 --lr $5
 # Evaluation
-python test_syn.py	--seed $1 --n-epochs 500 
-			--adv --norm-type $2 
+python test_syn.py	--seed $1 --n-epochs 500 \
+			--adv --norm-type $2 \
 			--norm-scale $3 --R $4 --lr $5
 ```
 
