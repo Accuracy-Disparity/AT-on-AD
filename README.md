@@ -28,13 +28,13 @@ python test_syn.py  --seed $1 --n-epochs 500 --R $2 --lr $3
 
 ## Robust Model
 # Training
-python train_syn.py --seed $1 --n-epochs 500 
-										--adv --norm-type $2 
-										--norm-scale $3 --R $4 --lr $5
+python train_syn.py 	--seed $1 --n-epochs 500 
+			--adv --norm-type $2 
+			--norm-scale $3 --R $4 --lr $5
 # Evaluation
 python test_syn.py	--seed $1 --n-epochs 500 
-										--adv --norm-type $2 
-										--norm-scale $3 --R $4 --lr $5
+			--adv --norm-type $2 
+			--norm-scale $3 --R $4 --lr $5
 ```
 
 Note that when training the robust models, we need to configure three more arguments/options: `--adv`, `--norm-type`, and `--norm-scale`, which are needed for adversarial training. Specifically, we offer two options for ``--norm-type``: $\ell_2$ or $\ell_\infty$. 
